@@ -14,7 +14,9 @@ BOT_NAME = 'ScrapyStudy'
 SPIDER_MODULES = ['ScrapyStudy.spiders']
 NEWSPIDER_MODULE = 'ScrapyStudy.spiders'
 
-
+ITEM_PIPELINES = {
+    'ScrapyStudy.pipelines.XHPipeline': 1,
+}
 # Crawl responsibly by identifying yourself (and your website) on the user-agent
 #USER_AGENT = 'ScrapyStudy (+http://www.yourdomain.com)'
 
