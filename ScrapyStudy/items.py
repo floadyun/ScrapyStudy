@@ -16,3 +16,9 @@ class xhItem(scrapy.Item):
     name = scrapy.Field()
     imageUrl = scrapy.Field()
     title = scrapy.Field()
+
+class bookItem(scrapy.Item):
+    name = scrapy.Field()
+    author = scrapy.Field()
+    ratings = scrapy.Field()
+    description = scrapy.Field()
