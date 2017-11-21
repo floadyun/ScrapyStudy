@@ -16,6 +16,7 @@ NEWSPIDER_MODULE = 'ScrapyStudy.spiders'
 
 ITEM_PIPELINES = {
     'ScrapyStudy.pipelines.XHPipeline': 1,
+    'ScrapyStudy.pipelines.HongniangPipeline': 300,
 }
 USER_AGENT = 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3202.89 Safari/537.36'
 # Crawl responsibly by identifying yourself (and your website) on the user-agent

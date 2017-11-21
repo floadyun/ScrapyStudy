@@ -12,5 +12,3 @@ class XiaohuarSpider(scrapy.Spider):
             item['name'] = xiaohua.xpath('.//span[2]/span/text()').extract()
             item['imageUrl'] = xiaohua.xpath('.//a/img/@src').extract()
             yield item
-            print(item['name'])
-            print(item['imageUrl'])
